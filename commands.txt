@@ -2,7 +2,12 @@
 （添加）不知道这样使两个文件夹共用一个repo吗／
 git篇
 
+touch READ.md ---创建文档
 git init---初始化
+git add READ.md ---添加文档
+git commit -m "注释" ---提交到本地仓库
+git remote add origin git@github.com:yourname/xxxx.git ---连接到远程仓库，并创建一个叫origin的别名
+git push -u origin master ---将本地仓库的文件提交到别名为origin的地址的master分支下，-u为第一次提交，需要创建master分支，下次就不需要了
 git config --local -e---修改文件
 提交的命令顺序：
 git add filesname	
