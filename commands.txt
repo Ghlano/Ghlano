@@ -23,6 +23,15 @@ git reset --hard HEAD^^^ ---退回到HEAD的前第三个版本
 
 
 vim篇
+h ---向前移动光标
+j --- 向下移动
+k --- 向上移动
+l ---向后移动
+2h ---向前移动两列，其它类似
+/hello ---向后查找关键词hello
+?hello ---向前查找关键词hello
+* ---向后查找当前光标出得的单词
+# ---向前查找当前光标出的单词
 brew cask install vim --with-lua ---保持两种版本升级vim，下载到/usr/local/bin/vim目录下
 vi .zshrc ---进入配置文件添加
 # If you come from bash you might have to change your $PATH.
