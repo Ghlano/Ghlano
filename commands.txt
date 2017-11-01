@@ -1,7 +1,7 @@
           命令小全书
 
 git篇
-
+git入门http://www.imooc.com/article/19060
 git常用命令备忘http://www.imooc.com/article/1111
 touch READ.md ---创建文档
 git init---初始化
