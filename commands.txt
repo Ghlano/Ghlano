@@ -2,6 +2,7 @@
 
 git篇
 
+git常用命令备忘http://www.imooc.com/article/1111
 touch READ.md ---创建文档
 git init---初始化
 git add READ.md ---添加文档
