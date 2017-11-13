@@ -52,7 +52,8 @@ git clone git@github.com:Usersname/newcolorscheme.git ---下载主题
 vim .zshrc ---更改ohmyzsh主题
 
 其它
-
+vi ~/.zsh_history ---zsh下的命令记录
+./a.out<data.txt ---把data.txt作为程序的输入
 cat /etc/shells ---查看系统下的shell
 du ---查看磁盘空间状态
 ps ---查看当前进程状况
