@@ -52,6 +52,7 @@ git clone git@github.com:Usersname/newcolorscheme.git ---下载主题
 vim .zshrc ---更改ohmyzsh主题
 
 其它
+cat /etc/shells --- 查看系统有多少种shell
 vi ~/.zsh_history ---zsh下的命令记录
 ./a.out > data.txt ---把程序的输出保存到data.tx中(重定向)
 ./a.out<data.txt ---把data.txt作为程序的输入
