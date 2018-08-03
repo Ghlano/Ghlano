@@ -51,6 +51,7 @@ git clone git@github.com:Usersname/newcolorscheme.git ---下载主题
 vim .zshrc ---更改ohmyzsh主题
 
 其它
+sudo purge ---清除缓存
 zip -r xxx.zip ./* ---压缩文件
 unzip filename.zip ---解压文件到当前目录
 cat /etc/shells --- 查看系统有多少种shell
