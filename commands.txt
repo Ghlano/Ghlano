@@ -67,3 +67,4 @@ who ---查看用户名和终端类型
 echo ---显示指定文件
 pwd ---显示目录路径命令
 cat filename ---输出文件内容到基本输出
+videojs.getPlayers("video-player").html5player.tech_.setPlaybackRate(2)---百度网盘2倍播放
