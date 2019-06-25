@@ -50,6 +50,12 @@ mv newcolorschemes.vim ~/.vim ---把newcolorscheme主题移到~/.vim下，然后
 git clone git@github.com:Usersname/newcolorscheme.git ---下载主题
 vim .zshrc ---更改ohmyzsh主题
 
+anaconda使用
+conda create -n envname packageList ---创建虚拟环境，及特定的包
+conda env list ---列出所有的虚拟环境
+$ bash ---启用bash
+***在bash下，conda activate envname ---激活虚拟环境
+             source deactivate envname  ---关闭虚拟环境
 其它
 sudo purge ---清除缓存
 zip -r xxx.zip ./* ---压缩文件
@@ -68,3 +74,4 @@ echo ---显示指定文件
 pwd ---显示目录路径命令
 cat filename ---输出文件内容到基本输出
 videojs.getPlayers("video-player").html5player.tech_.setPlaybackRate(2)---百度网盘2倍播放
+
