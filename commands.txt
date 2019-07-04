@@ -56,6 +56,9 @@ conda env list ---列出所有的虚拟环境
 $ bash ---启用bash
 ***在bash下，conda activate envname ---激活虚拟环境
              source deactivate envname  ---关闭虚拟环境
+安装指定版本的tensorflow,进入环境下，pip install tensorflow==x.x.x
+conda envname list---列出envlist已经安装的包
+在环境下，conda list列出已安装的包
 其它
 sudo purge ---清除缓存
 zip -r xxx.zip ./* ---压缩文件
