@@ -59,7 +59,13 @@ $ bash ---启用bash
 安装指定版本的tensorflow,进入环境下，pip install tensorflow==x.x.x
 conda envname list---列出envlist已经安装的包
 在环境下，conda list列出已安装的包
+
+
 其它
+lano@MBP --MBP是hostname，lano是username
+sudo scutil --set ComputerName   修改本机名称
+sudo scutil --set HostName   修改hostname
+scutil --get HostName ---获取当前HostName
 sudo purge ---清除缓存
 zip -r xxx.zip ./* ---压缩文件
 unzip filename.zip ---解压文件到当前目录
