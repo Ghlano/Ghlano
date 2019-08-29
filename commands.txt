@@ -59,7 +59,10 @@ $ bash ---启用bash
 安装指定版本的tensorflow,进入环境下，pip install tensorflow==x.x.x
 conda envname list---列出envlist已经安装的包
 在环境下，conda list列出已安装的包
-
+jupyter notebook使用conda环境：
+  ->激活环境codna activate envname
+  ->安装conda install ipykernel
+  ->将环境写入notebook的kernel中python -m ipykernel install --user --name envname --display-name “python env name”
 
 其它
 lano@MBP --MBP是hostname，lano是username
