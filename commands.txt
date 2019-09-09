@@ -62,7 +62,7 @@ conda envname list---列出envlist已经安装的包
 jupyter notebook使用conda环境：
   ->激活环境codna activate envname
   ->安装conda install ipykernel
-  ->将环境写入notebook的kernel中python -m ipykernel install --user --name envname --display-name “python env name”
+  ->将环境写入notebook的kernel中python -m ipykernel install --user --name envname --display-name “python envname”
 
 其它
 lano@MBP --MBP是hostname，lano是username
@@ -87,3 +87,18 @@ pwd ---显示目录路径命令
 cat filename ---输出文件内容到基本输出
 videojs.getPlayers("video-player").html5player.tech_.setPlaybackRate(2)---百度网盘2倍播放
 
+关于ssh
+sudo apt-get update ---更新列表
+sudo apt-get install openssh-client ---客户端
+sudo apt-get install openssh-server ---服务器
+sudo service ssh start ---启用ssh
+sudo apt-get install uwf ---安装ufw
+sudo ufw enable|disable ---关闭|开启防火墙
+sudo ufw status ---查看防火墙状态
+sudo vim /etc/ssh/sshd_config
+	PermiRootLogin yes
+	strictModes yes
+			---在文件中修改这两行参数，允许ssh登陆
+sudo passwd root ---修改登陆密码，出现Permition deny的时候
+sudo ssh root@localhost ---测试ssh连接是否可用
+ssh root@XXX.XXX.XXX.XXX ---mac下使用远程连接主机
