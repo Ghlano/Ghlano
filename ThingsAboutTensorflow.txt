@@ -8,3 +8,6 @@ checkpoint 文件保存的是最好的几次训练结果,可以通过修改该�
 关于Keras训练模型生相关文件
 .h5 文件保存的是keras训练出的模型信息:结构、权重、损失函数、优化器、优化器的状态等
 .yaml文件保存的仅仅是模型的结构，不包含权重等其他信息
+
+  tf.distribute.Stratiagy可以让model在多个GPU上跑
+
