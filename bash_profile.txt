@@ -1,0 +1,8 @@
+
+#set colors
+export GIT_HOMEH=/usr/bin/git:$PATH
+export CLICOLOR=1export
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+LSCOLORS=exfxhxhxgxhxhxgxgxbxbx 
+export PYTHONSTARTUP=~/.pystartup
+

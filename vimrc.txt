@@ -1,0 +1,8 @@
+
+set clipboard=unnamedplus
+set nu
+set ruler
+colorscheme solarized 
+syntax on
+set autoindent
+set backspace=2

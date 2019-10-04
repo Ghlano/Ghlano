@@ -1,0 +1,104 @@
+          命令小全书
+git篇
+git入门http://www.imooc.com/article/19060
+git常用命令备忘http://www.imooc.com/article/1111
+touch READ.md ---创建文档
+git init---初始化
+git add READ.md ---添加文档
+git commit -m "注释" ---提交到本地仓库
+git remote add origin git@github.com:yourname/xxxx.git ---连接到远程仓库，并创建一个叫origin的别名
+git push -u origin master ---将本地仓库的文件提交到别名为origin的地址的master分支下，-u为第一次提交，需要创建master分支，下次就不需要了
+git config --local -e---修改文件
+提交的命令顺序：
+git add filesname	
+git commit -m "注释"到本地
+git pull --- 把github上得同步到本地仓库(当显示错误时执行)
+git push --- 同步到github仓库上
+---创建文件夹，1.在线创建：先在github上创建在框内输入“／”，然后输入文件夹名，git pull到本地
+git remote rm origin ---删除当前关联的仓库
+git branch -a ---查看所有分支，＊表示当前所在分支
+git clone git@github.com:Ghlano/carbonized.git ---表示从该仓库下载carbonized目录（文件）到本地
+git log ---查看提交日志
+git reset --hard HEAD^^^ ---退回到HEAD的前第三个版本
+
+
+vim篇
+h ---向前移动光标
+j --- 向下移动
+k --- 向上移动
+l ---向后移动
+2h ---向前移动两列，其它类似
+/hello ---向后查找关键词hello
+?hello ---向前查找关键词hello
+* ---向后查找当前光标出得的单词
+# ---向前查找当前光标出的单词
+brew cask install vim --with-lua ---保持两种版本升级vim，下载到/usr/local/bin/vim目录下
+vi .zshrc ---进入配置文件添加
+# If you come from bash you might have to change your $PATH.
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+到最上面
+source .zshrc ---让其生效
+sudo ln -s /usr/local/bin/vim /usr/local/bin/vi ---建立一个vi的软连接
+*但是会发现新版本的vim无法正常使用delete键－－只能删除当前输入*
+vi ~/.vimrc ---进入.vimrc,添加set backspace=2
+"*yny ---把n行代码复制到系统clipboard
+"+yny ---把内容复制到系统clipboard，然后就可以在其他地方粘贴了
+*在编辑代码界面，按esc后，键入:set nonu可以把行数去掉*
+vim .vimrc ---更改vim的主题
+cd /usr/share/vim/vim73/colors ---进入到vim自带的主题目录下
+mv newcolorschemes.vim ~/.vim ---把newcolorscheme主题移到~/.vim下，然后可更改主题
+git clone git@github.com:Usersname/newcolorscheme.git ---下载主题
+vim .zshrc ---更改ohmyzsh主题
+
+anaconda使用
+conda create -n envname packageList ---创建虚拟环境，及特定的包
+conda env list ---列出所有的虚拟环境
+$ bash ---启用bash
+***在bash下，conda activate envname ---激活虚拟环境
+             source deactivate envname  ---关闭虚拟环境
+安装指定版本的tensorflow,进入环境下，pip install tensorflow==x.x.x
+conda envname list---列出envlist已经安装的包
+在环境下，conda list列出已安装的包
+jupyter notebook使用conda环境：
+  ->激活环境codna activate envname
+  ->安装conda install ipykernel
+  ->将环境写入notebook的kernel中python -m ipykernel install --user --name envname --display-name “python envname”
+
+其它
+lano@MBP --MBP是hostname，lano是username
+sudo scutil --set ComputerName   修改本机名称
+sudo scutil --set HostName   修改hostname
+scutil --get HostName ---获取当前HostName
+sudo purge ---清除缓存
+zip -r xxx.zip ./* ---压缩文件
+unzip filename.zip ---解压文件到当前目录
+cat /etc/shells --- 查看系统有多少种shell
+vi ~/.zsh_history ---zsh下的命令记录
+./a.out > data.txt ---把程序的输出保存到data.tx中(重定向)
+./a.out<data.txt ---把data.txt作为程序的输入
+cat /etc/shells ---查看系统下的shell
+du ---查看磁盘空间状态
+ps ---查看当前进程状况
+mkdir ---创建目录
+rmdir 删除目录
+who ---查看用户名和终端类型
+echo ---显示指定文件
+pwd ---显示目录路径命令
+cat filename ---输出文件内容到基本输出
+videojs.getPlayers("video-player").html5player.tech_.setPlaybackRate(2)---百度网盘2倍播放
+
+关于ssh
+sudo apt-get update ---更新列表
+sudo apt-get install openssh-client ---客户端
+sudo apt-get install openssh-server ---服务器
+sudo service ssh start ---启用ssh
+sudo apt-get install uwf ---安装ufw
+sudo ufw enable|disable ---关闭|开启防火墙
+sudo ufw status ---查看防火墙状态
+sudo vim /etc/ssh/sshd_config
+	PermiRootLogin yes
+	strictModes yes
+			---在文件中修改这两行参数，允许ssh登陆
+sudo passwd root ---修改登陆密码，出现Permition deny的时候
+sudo ssh root@localhost ---测试ssh连接是否可用
+ssh root@XXX.XXX.XXX.XXX ---mac下使用远程连接主机
