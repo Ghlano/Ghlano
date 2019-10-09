@@ -63,7 +63,16 @@ jupyter notebook使用conda环境：
   ->激活环境codna activate envname
   ->安装conda install ipykernel
   ->将环境写入notebook的kernel中python -m ipykernel install --user --name envname --display-name “Python envname”
-
+jupyter自动补全代码
+  ->在base环境下安装nbextensions
+      pip3 install jupyter_contrib_nbextensions
+      jupyter contrib nbextension install --user
+   ->然后安装nbextensions_configurator
+      pip3 install jupyter_nbextensions_configurator
+      jupyter nbextensions_configurator enable --user
+    ->然后打开jupyter notebook
+      在Nbextensions模块勾选 Hinerland
+关联jupyter与conda中的环境,在非环境中conda install nb_conda
 其它
 lano@MBP --MBP是hostname，lano是username
 sudo scutil --set ComputerName   修改本机名称
