@@ -73,6 +73,8 @@ jupyter自动补全代码
     ->然后打开jupyter notebook
       在Nbextensions模块勾选 Hinerland
 关联jupyter与conda中的环境,在非环境中conda install nb_conda
+conda update mkl  ---当在jupyter运行tensorflow出现自动重启时，可更新
+                     或者卸载tensoeflow重装
 其它
 lano@MBP --MBP是hostname，lano是username
 sudo scutil --set ComputerName   修改本机名称
