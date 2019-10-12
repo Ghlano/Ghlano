@@ -113,3 +113,10 @@ sudo vim /etc/ssh/sshd_config
 sudo passwd root ---修改登陆密码，出现Permition deny的时候
 sudo ssh root@localhost ---测试ssh连接是否可用
 ssh root@XXX.XXX.XXX.XXX ---mac下使用远程连接主机
+
+关于linux
+    安装NVIDIA驱动:
+       sudo vim /etc/modprobe.d/blacklist.conf
+         添加blacklist nouveau
+       sudo update-initramfs -u------更新内核
+    
