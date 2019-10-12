@@ -119,4 +119,7 @@ ssh root@XXX.XXX.XXX.XXX ---mac下使用远程连接主机
        sudo vim /etc/modprobe.d/blacklist.conf
          添加blacklist nouveau
        sudo update-initramfs -u------更新内核
+       lsmod | grep nouveau   -------查看nouveau是否禁用成功
+
+       sudo sh /.NVIDIA-xxx-xxx-x86.run --no-opengl-files   ----安装驱动，不安装opengl，防止登陆死循环
     
