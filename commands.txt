@@ -126,3 +126,6 @@ ssh root@XXX.XXX.XXX.XXX ---mac下使用远程连接主机
        sudo sh /.NVIDIA-xxx-xxx-x86.run --no-opengl-files   ----安装驱动，不安装opengl，防止登陆死循环
        no headers  ---解决方法
           ---sudo apt install build-essential
+       sudo dpkg --add-architecture i386
+       sudo apt update
+       sudo apt install libc6:i386   ---安装32位库依赖
