@@ -129,3 +129,12 @@ ssh root@XXX.XXX.XXX.XXX ---mac下使用远程连接主机
        sudo dpkg --add-architecture i386
        sudo apt update
        sudo apt install libc6:i386   ---安装32位库依赖
+    关于mentohust开机启动脚本:
+       start_mentohust.sh{
+         !#/bin/sh
+         sudo mentohust -a1 -d2 -u用户名@有线1x上网服务 -p密码
+       }
+       sudo chmod a+x start_mentohust.sh
+       update-rc.d start-mentohust.sh defaults 95    ---把脚本加入开机自启动队列，一般用靠后的下标
+       sudo service start_mentohust.sh               ---启动脚本服务
+       sudo reboot                                   ---重启
