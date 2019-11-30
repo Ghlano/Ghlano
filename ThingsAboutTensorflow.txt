@@ -11,3 +11,6 @@ checkpoint 文件保存的是最好的几次训练结果,可以通过修改该�
 
   tf.distribute.Stratiagy可以让model在多个GPU上跑
 
+关于tensorflow2.0版本
+CUDA---10.0
+cudnn---7.6
