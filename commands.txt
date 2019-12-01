@@ -53,6 +53,15 @@ git clone git@github.com:Usersname/newcolorscheme.git ---下载主题
 vim .zshrc ---更改ohmyzsh主题
 
 anaconda使用
+chown -R lano:staff anaconda3  ---安装包时出现permittion deny,可以更改文件所有者
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+   ---添加镜像,也可直接到~/.condarc下直接添加
+conda config --remove channels url   ---删除下载通道
+conda config --set show_channel_urls yes   ---是否显示下载通道
+conda update conda   ---升级conda
+conda update anaconda   ---升级anaconda
+conda update anaconda-navigator   ---升级
 conda create -n envname packageList ---创建虚拟环境，及特定的包
 conda env list ---列出所有的虚拟环境
 $ bash ---启用bash
@@ -144,13 +153,4 @@ ssh root@XXX.XXX.XXX.XXX ---mac下使用远程连接主机
        update-rc.d start-mentohust.sh defaults 95    ---把脚本加入开机自启动队列，一般用靠后的下标
        sudo service start_mentohust.sh               ---启动脚本服务
        sudo reboot                                   ---重启
-
-
-关于anaconda安装
-  conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-  conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-     ---添加镜像,也可直接到~/.condarc下直接添加
-  conda config --remove channels url   ---删除下载通道
-  conda config --set show_channel_urls yes   ---是否显示下载通道
-
 
