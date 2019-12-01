@@ -73,7 +73,7 @@ conda envname list---列出envlist已经安装的包
 jupyter notebook使用conda环境：
   ->激活环境codna activate envname
   ->安装conda install ipykernel
-  ->将环境写入notebook的kernel中python -m ipykernel install --user --name envname --display-name “Python envname”
+  ->将环境写入notebook的kernel中python -m ipykernel install --user --name envname --display-name "Python envname"
 jupyter自动补全代码
   ->在base环境下安装nbextensions
       pip3 install jupyter_contrib_nbextensions
