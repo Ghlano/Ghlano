@@ -53,6 +53,7 @@ git clone git@github.com:Usersname/newcolorscheme.git ---下载主题
 vim .zshrc ---更改ohmyzsh主题
 
 anaconda使用
+conda config --set auto_activate_base false    ---关闭自动激活环境
 chown -R lano:staff anaconda3  ---安装包时出现permittion deny,可以更改文件所有者
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
