@@ -1,5 +1,6 @@
           命令小全书
-
+MySQL篇
+ERROR! MySQL server PID file could not be found!   ---报错，搞了一个下午，配置改来改去，最后一次重装，稀里糊涂就行了。
 git篇
 git入门http://www.imooc.com/article/19060
 git常用命令备忘http://www.imooc.com/article/1111
