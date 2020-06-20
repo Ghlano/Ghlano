@@ -3,6 +3,8 @@
 3306---MySQL
 8090---hadoop
 
+jps   ---显示JVM里面的进程
+kill -9 进程号   ---可以杀掉指定进程
 
 MySQL篇
 ERROR! MySQL server PID file could not be found!   ---在/usr/local/mysql/data/目录下创建了HostName.err的文件，并且原本应该存在的mysql.local.pid文件被删除，保留原本存在的mysql.local.err文件.
