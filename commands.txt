@@ -10,7 +10,7 @@ MySQL篇
 ERROR! MySQL server PID file could not be found!   ---在/usr/local/mysql/data/目录下创建了HostName.err的文件，并且原本应该存在的mysql.local.pid文件被删除，保留原本存在的mysql.local.err文件.
 . ERROR! The server quit without updating PID file (/usr/local/mysql/data/lano.pid).   ---出现这个原因是因为mysql进程对/usr/local/mysql/data/下的文件没有写的权限，用chmod -R 777 /usr/local/mysql/data赋予所有权限即可.
 grant all privileges on *.* to 'lano'@'%' with grant option;   ---mysql8.0授权命令
-
+select user,host from mysql.user;   ---显示用户名以及访问途径
 
 git篇
 git入门http://www.imooc.com/article/19060
