@@ -3,6 +3,16 @@
 3306---MySQL
 8090---hadoop
 
+Spark相关
+./bin/hdfs dfs -mkdir -p /User/lano/dataSicence/hadoop/data    ---为HDFS文件系统创建使用用户lano的文件目录,即这个data目录就是HDFS使用的目录
+./bin/hdfs dfs -ls .    ---查看当前用户lano在HDFS文件系统目录下的文件
+./bin/hdfs dfs -put /mydata/word.txt   ---把本地文件word.txt上传到HDFS系统中
+
+val textFile = sc.textFile("hdfs://localhost:9000/user/hadoop/word.txt")
+val textFile = sc.textFile("/user/hadoop/word.txt")
+val textFile = sc.textFile("word.txt")
+以上3条都是从hDFS文件系统中读取数据的方法 
+
 jps   ---显示JVM里面的进程
 kill -9 进程号   ---可以杀掉指定进程
 
