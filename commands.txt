@@ -12,6 +12,7 @@ val textFile = sc.textFile("hdfs://localhost:9000/user/hadoop/word.txt")
 val textFile = sc.textFile("/user/hadoop/word.txt")
 val textFile = sc.textFile("word.txt")
 以上3条都是从hDFS文件系统中读取数据的方法 
+driver-class-path /usr/local/spark/jar/    ---导入jar下面所有文件，与ubuntu有所不同
 
 jps   ---显示JVM里面的进程
 kill -9 进程号   ---可以杀掉指定进程
