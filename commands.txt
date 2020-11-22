@@ -46,6 +46,10 @@ git log ---查看提交日志
 git reset --hard HEAD^^^ ---退回到HEAD的前第三个版本
 git push -u origin +master ---强行提交
 
+git fetch --all
+git reset --hard origin/master
+git pull
+---以上三条是强制pull命令
 
 vim篇
 h ---向前移动光标
@@ -132,6 +136,7 @@ echo ---显示指定文件
 pwd ---显示目录路径命令
 cat filename ---输出文件内容到基本输出
 videojs.getPlayers("video-player").html5player.tech_.setPlaybackRate(2)---百度网盘2倍播放
+curl:Connection refused    ---解决方法，查询对应网址的ip地址，然后在/etc/hosts文件中添加，例如199.232.68.133 raw.githubusercontent.com
 
 关于ssh
 sudo apt-get update ---更新列表
