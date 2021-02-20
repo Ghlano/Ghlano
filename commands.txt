@@ -138,6 +138,8 @@ cat filename ---输出文件内容到基本输出
 videojs.getPlayers("video-player").html5player.tech_.setPlaybackRate(2)---百度网盘2倍播放
 curl:Connection refused    ---解决方法，查询对应网址的ip地址，然后在/etc/hosts文件中添加，例如199.232.68.133 raw.githubusercontent.com
 
+/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"   ---利用国内镜像安装homebrew
+
 关于ssh
 sudo apt-get update ---更新列表
 sudo apt-get install openssh-client ---客户端
