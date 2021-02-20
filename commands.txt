@@ -116,8 +116,8 @@ conda update mkl  ---当在jupyter运行tensorflow出现自动重启时，可更
                      或者卸载tensoeflow重装
 其它
 lano@MBP --MBP是hostname，lano是username
-sudo scutil --set ComputerName   修改本机名称
-sudo scutil --set HostName   修改hostname
+sudo scutil --set ComputerName name  修改本机名称
+sudo scutil --set HostName name  修改hostname
 scutil --get HostName ---获取当前HostName
 sudo purge ---清除缓存
 zip -r xxx.zip ./* ---压缩文件
