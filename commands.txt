@@ -75,7 +75,7 @@ vi ~/.vimrc ---进入.vimrc,添加set backspace=2
 *在编辑代码界面，按esc后，键入:set nonu可以把行数去掉*
 vim .vimrc ---更改vim的主题
 cd /usr/share/vim/vim73/colors ---进入到vim自带的主题目录下
-mv newcolorschemes.vim ~/.vim ---把newcolorscheme主题移到~/.vim下，然后可更改主题
+mv newcolorschemes.vim ~/.vim/colors ---把newcolorscheme主题移到~/.vim下，然后可更改主题
 git clone git@github.com:Usersname/newcolorscheme.git ---下载主题
 vim .zshrc ---更改ohmyzsh主题
 
