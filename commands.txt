@@ -53,6 +53,30 @@ git reset --hard origin/master
 git pull
 ---以上三条是强制pull命令
 
+  Homebrew篇
+更换brew.git
+  cd "$(brew --repo)"
+  git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
+  git remote set-url origin https://github.com/Homebrew/brew.git
+更换homebrew-core.git
+  cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
+  git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
+  git remote set-url origin https://github.com/Homebrew/homebrew-core.git
+更换Home cask
+  cd "$(brew --repo)"/Library/Taps/homebrew/homebrew-cask
+  git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-cask.git
+  git remote set-url origin https://github.com/Homebrew/homebrew-cask
+更换home bottle
+  长期更换：
+  echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' >> ~/.bash_profile
+  source ~/.bash_profile
+
+  临时更换：
+  export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+  
+  注释掉bash配置文件里的有关Homebrew Bottles即可恢复官方源。 重启bash或让bash重读配置文件。
+
+
 vim篇
 h ---向前移动光标
 j --- 向下移动
