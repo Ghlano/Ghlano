@@ -49,7 +49,7 @@ git reset --hard HEAD^^^ ---退回到HEAD的前第三个版本
 git push -u origin +master ---强行提交
 
 git fetch --all
-git reset --hard origin/master
+git reset --hard origin/<branchname>
 git pull
 ---以上三条是强制pull命令
 
