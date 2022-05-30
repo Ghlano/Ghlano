@@ -71,6 +71,13 @@ git checkout -- file ---可以撤销工作区的全部修改（情况1:修改后
 git add file是把file add到stage, git -m commit ""是把当前修改提交到分支；
 git管理的是修改，而不是文件，比如说第一次修改进行了add，第二次修改没有进行add，那么这时候进行commit提交到分支的只有第一次修改。
 
+关于.gitignore文件:
+.gitignore本身也需要被添加到版本库内
+把不想提交的文件添加打gitignore中，
+!filename---  把filename排除在.gitignore规则之外
+
+
+
 git版本控制系统可以分为两个区域，工作区以及版本库。
 工作区即当前的工作目录，工作区的.git目录是为版本库，版本库最重要的是stage（占存区）,第二个是git自动创建的第一个分支-master，以及指向master的指针head；
 工作区是当前肉眼可见的区域，占区对于开发者不可见。
