@@ -45,6 +45,7 @@ git remote rm origin ---删除当前关联的仓库
 git branch -a ---查看所有分支，＊表示当前所在分支
 git clone git@github.com:Ghlano/carbonized.git ---表示从该仓库下载carbonized目录（文件）到本地
 git log ---查看提交日志
+git reflog ---查看历史命令，以便确定回到未来的哪个版本
 git reset --hard HEAD^^^ ---退回到HEAD的前第三个版本
 git push -u origin +master ---强行提交
 
@@ -52,6 +53,30 @@ git fetch --all
 git reset --hard origin/<branchname>
 git pull
 ---以上三条是强制pull命令
+
+git merge branch ---合并指定的branch分支到当前分支
+git rm file ---从版本库中删除文件
+git switch -c newBranch ---创建并切换分支
+git branch -d branchName ---删除分支
+git tag tagName ---打标签，默认commit id为head了
+git tag tagName CommitId ---根据commit id打标签
+git tag -a <tagname> -m "blablabla..."  ---指定标签信息
+git tag -d tagname ---先删除本地tag
+git push origin :refs/tags/tagname ---然后删除远程tag
+
+
+git checkout -- file ---可以撤销工作区的全部修改（情况1:修改后没有存到暂存区，没有进行add；情况2:修改已经添加到暂存区，已经进行add，没有进行commit），让文件回到最近一次git commit或git add的状态
+
+关于git的一些概念：
+git add file是把file add到stage, git -m commit ""是把当前修改提交到分支；
+git管理的是修改，而不是文件，比如说第一次修改进行了add，第二次修改没有进行add，那么这时候进行commit提交到分支的只有第一次修改。
+
+git版本控制系统可以分为两个区域，工作区以及版本库。
+工作区即当前的工作目录，工作区的.git目录是为版本库，版本库最重要的是stage（占存区）,第二个是git自动创建的第一个分支-master，以及指向master的指针head；
+工作区是当前肉眼可见的区域，占区对于开发者不可见。
+
+
+
 
   Homebrew篇
 更换brew.git
