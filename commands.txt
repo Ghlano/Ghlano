@@ -150,6 +150,7 @@ conda update anaconda   ---升级anaconda
 conda update anaconda-navigator   ---升级
 conda create -n envname packageList ---创建虚拟环境，及特定的包
 conda env list ---列出所有的虚拟环境
+/envpath/python -m pip install pakacge.tar.gz ---将压缩包安装到指定conda环境中,envpath为该环境对应的python路径
 $ bash ---启用bash
 ***在bash下，conda activate envname ---激活虚拟环境
              source deactivate envname  ---关闭虚拟环境
