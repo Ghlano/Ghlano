@@ -24,6 +24,7 @@ CREATE USER 'username'@'%' IDENTIFIED BY 'password';   ---新增用户
 grant all privileges on *.* to 'lano'@'%' with grant option;   ---mysql8.0授权命令
 FLUSH PRIVILEGES;   ---刷新
 select user,host from mysql.user;   ---显示用户名以及访问途径
+can't find mysqld.sock ---简单粗暴，直接重装mysql=_=
 
 git篇
 git入门http://www.imooc.com/article/19060
