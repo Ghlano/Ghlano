@@ -16,6 +16,13 @@ driver-class-path /usr/local/spark/jar/    ---导入jar下面所有文件，与u
 
 jps   ---显示JVM里面的进程
 kill -9 进程号   ---可以杀掉指定进程
+Spring篇
+
+pom.xml---文件不爆红，但仍然无法导入相关依赖，解决办法：
+  1.更新repository
+  2.删除缓存
+  3.删掉dependencies重新编辑
+  4.删除本地仓库，重新导入
 
 MySQL篇
 ERROR! MySQL server PID file could not be found!   ---在/usr/local/mysql/data/目录下创建了HostName.err的文件，并且原本应该存在的mysql.local.pid文件被删除，保留原本存在的mysql.local.err文件(如果没有则新增).
