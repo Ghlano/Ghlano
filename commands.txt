@@ -96,6 +96,35 @@ git版本控制系统可以分为两个区域，工作区以及版本库。
 工作区是当前肉眼可见的区域，占区对于开发者不可见。
 
 Docker篇
+Cannot connect to the Docker daemon at tcp://0.0.0.0:2375. Is the docker daemon running?
+solution: 
+run:
+unset DOCKER_HOST
+unset DOCKER_TLS_VERIFY
+unset DOCKER_TLS_PATH
+
+相关文件位置：
+docker.service:/lib/systemd/system/docker.service
+daemon.json:/etc/docker/daemon.json
+docker.sock:
+
+docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?.
+solution:
+sudo vim daemon.json:添加{"registry-mirrors": ["https://registry.docker-cn.com"]}
+systemctl restart docker.service
+
+docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create": dial unix /var/run/docker.sock: connect: permission denied.
+solution:
+sudo gpasswd -a test docker
+newgrp docker
+
+Warning: The unit file, source configuration file or drop-ins of docker.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+solution:
+sudo rm  /etc/systemd/system/docker.service.d/override.conf
+systemctl reset-failed docker.service
+ systemctl daemon-reload
+ systemctl start docker.service
+
 
 
 
